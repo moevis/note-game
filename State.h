@@ -8,13 +8,14 @@
 
 class State {
 public:
-    void init();
-    void onEnter();
-    void onExit();
-    void onPause();
-    void onResume();
-    void display();
-    void onKeyboard();
+    virtual void init();
+    virtual void onEnter();
+    virtual void onExit();
+    virtual void onPause();
+    virtual void onResume();
+    virtual void update(int64_t timeSinceLastFrame);
+    virtual void display();
+    virtual void onKeyboard(char keycode);
 };
 
 

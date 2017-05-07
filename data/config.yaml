@@ -8,6 +8,7 @@ screen:
 
 graph:
   welcome:
-    logo: "data/graph/logo.txt"
+    logo: ["data/graph/logo.txt"]
   player:
-    running: "data/player/running.txt"
+    running: ["data/player/running.txt"]
+    jumping: ["data/player/jumping.txt"]

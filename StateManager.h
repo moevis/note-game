@@ -7,13 +7,17 @@
 
 #include <vector>
 #include "Singleton.h"
-
-Class State;
+#include "State.h"
 
 class StateManager: public Singleton<StateManager> {
 public:
-    void display(int time);
+    void display();
     void pushState(State* state);
+    void popState();
+    void switchState(State *state);
+    void update(int64_t timeSinceLastFrame);
+    void updateInput(char c);
+    bool isRunning = true;
 private:
     std::vector<State *> states;
 };
