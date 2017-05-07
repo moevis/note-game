@@ -1,0 +1,13 @@
+sound:
+  background: "fdsa"
+  jump_music: "fdsf"
+  button_music: "fdsf"
+
+screen:
+  refresh_interval: 20
+
+graph:
+  welcome:
+    logo: "data/graph/logo.txt"
+  player:
+    running: "data/player/running.txt"
